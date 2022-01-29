@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Chelseao86/12employeeTracker#readme",
   "dependencies": {
+    "dotenv": "^14.2.0",
     "express": "^4.17.2",
     "mysql2": "^2.3.3"
   }
