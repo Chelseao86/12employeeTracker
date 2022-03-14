@@ -1,0 +1,29 @@
+{
+  "name": "12employeetracker",
+  "version": "1.0.0",
+  "description": "Application to view and manage the departments, roles, and employees in my company so a user can organize and plan their business.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chelseao86/12employeeTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chelseao86/12employeeTracker/issues"
+  },
+  "homepage": "https://github.com/Chelseao86/12employeeTracker#readme",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": []
+}
