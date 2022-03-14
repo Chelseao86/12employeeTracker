@@ -1,4 +1,26 @@
-INSERT INTO department (departmentName)
-VALUES
+-- INSERT INTO department (departmentName)
+-- VALUE ("Engineering");
+-- INSERT INTO department (name)
+-- VALUE ("Finance");
+-- INSERT INTO department (name)
+-- VALUE ("Sales");
+-- INSERT INTO department (name)
+-- VALUE ("Legal");
 
+-- INSERT INTO role (role_title, salary, dept_id)
+-- VALUE ("Lead Engineer", 200000, 1);
+-- INSERT INTO role (role_title, salary, dept_id)
+-- VALUE ("Accountant", 110000, 2);
+-- INSERT INTO role (role_title, salary, dept_id)
+-- VALUE ("Sales Rep", 85000, 3);
+-- INSERT INTO role (role_title, salary, dept_id)
+-- VALUE ("Legal Team Lead", 210000, 4);
 
+-- INSERT INTO employee (first_name, last_name, manager_id, role_id)
+-- VALUE ("Ada", "Lovelace", null, 2);
+-- INSERT INTO employee (first_name, last_name, manager_id, role_id)
+-- VALUE ("Marie", "Curie", null, 3);
+-- INSERT INTO employee (first_name, last_name, manager_id, role_id)
+-- VALUE ("Margaret", "Mead", null, 4);
+-- INSERT INTO employee (first_name, last_name, manager_id, role_id)
+-- VALUE ("Jane", "Goodall", null, 5);
