@@ -48,7 +48,7 @@ getDept();
 console.log(roleArr, managerArr, departmentArr, employeesArr)
 
 // call inquirer prompts
-inquirer
+return inquirer
   .prompt({
     name: "action",
     type: "rawlist",
@@ -163,7 +163,7 @@ case "Employee Options":
       }
     });
   case "End":
-    return;
+    return 0;
   }
   }).catch(err => console.log(err))
 };
@@ -171,7 +171,12 @@ case "Employee Options":
 connection.connect(
   function(e){
     if (e) console.log(e)
-    runApp()
+    return runApp()
+    .then(res=> {
+      console.log(res)
+      if (res === 0){
+      process.exit(0)}
+    })
   }
 ) 
 
@@ -360,14 +365,16 @@ const addEmployee = () => {
       },
     ])
     .then((res) => {
-      const mangager = managerArr.length ? managerArr.indexOf(res.manager_choice) + 1 : null
+      const manager = managerArr.length ? res.manager_choice : null
+     console.log(res.manager_choice)
+      console.log(manager)
       connection.query(
         "INSERT INTO employee (firstName, lastName, roleId, managerId) VALUES (?, ?, ?, ?);",
         [
           res.firstName,
           res.lastName,
           roleArr.indexOf(res.role) + 1,
-          mangager,
+          manager,
         ],
         (err, res) => {
           if (err) throw err;
